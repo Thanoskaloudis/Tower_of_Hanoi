@@ -7,15 +7,15 @@ const towers = 3;
 class Towers extends React.Component {
   constructor(props) {
     super(props);
-    let firstTower = _.range(1, this.props.discsNumber + 1);
+    let first = _.range(1, this.props.discsNumber + 1);
     let discs = _.map(Array(towers), (val, i) =>
-      i === 0 ? firstTower : []
+      i === 0 ? first : []
     );
     this.state = {discs,discsNumber:this.props.value};
   }
 
 
-  startTopDiscDrag(activeTower) {
+  startTopDisc(activeTower) {
     this.activeTower = activeTower;
   }
 
@@ -42,7 +42,7 @@ class Towers extends React.Component {
           <Tower
             key={i+1}
             towerDiscs={towerDiscs}
-            startTopDiscDrag={() => this.startTopDiscDrag(i)}
+            startTopDisc={() => this.startTopDisc(i)}
             dropDisc={() => this.dropDisc(i)}
           />
         )}

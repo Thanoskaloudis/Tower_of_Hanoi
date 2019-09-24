@@ -2,7 +2,7 @@ import React from 'react';
 import Disc from './disc';
 
 
-const Tower = ({towerDiscs, startTopDiscDrag, dropDisc}) => {
+const Tower = ({towerDiscs, startTopDisc, dropDisc}) => {
     return (
         <div
         className='tower'
@@ -17,7 +17,7 @@ const Tower = ({towerDiscs, startTopDiscDrag, dropDisc}) => {
               key={size.toString()}
               size={size}
               topDisc={i===0}
-              startDrag={startTopDiscDrag}
+              startDrag={startTopDisc}
             />
           )}
         </div>

@@ -1,0 +1,68 @@
+body {
+  background-color: beige;  
+}
+
+.maincontainer{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+.tower {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin-right: 15px;
+  width: 220px;
+}
+
+.tower-pillar {
+  background-color:   #cc9966;
+  border-radius: 10px;
+  border-width: 1px 1px 0 1px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20px;
+  height:200px ;
+}
+
+.tower-base {
+  background-color: #cc9966;
+  border-radius: 10px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+
+.disc-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 0 22px 0;
+}
+
+.disc {
+  font-size: 12px;
+  height: 20px;
+  vertical-align: center;
+  border-radius: 5px;
+  border:0.1px solid rgb(61, 61, 61);
+}
+
+
+#buttons {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  margin: 15px;
+}
+
